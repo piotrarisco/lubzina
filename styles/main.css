@@ -1,0 +1,633 @@
+/*TEKSTY*/
+.btn-success,  .btn-sm {
+ margin:5px;   
+}
+
+
+.container {
+  padding: 2rem 0rem;
+}
+
+
+
+.modal-dialog {
+  margin-bottom: 0rem;
+  max-width: 100%;
+  
+  .modal-content {
+    border-radius: 0rem;
+  }
+  
+  .buttons {
+    .btn {
+      margin: 0.2rem;
+    }
+  }
+}
+
+.modal-dialog {
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   z-index: 10040;
+   overflow: auto;
+   overflow-y: auto;
+}
+.pz-title {
+    color:green; 
+    font-size:20px;
+}
+
+.pz-logo{
+    font-size: 20px;
+    width:150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+/*aby zdjęcia wrzucone mieściły sie w kontenerze */
+.zwiastun img {
+    max-width:100%;
+}
+
+
+.col-sm {
+    padding:0;
+    margin:0;
+}
+
+.row {
+    padding:0;
+    margin:0;
+}
+
+.content {
+    font-size: 14px;
+}
+
+.back_btn {
+    font-size:20px;
+     background-color: rgb(102,153,51);
+     padding:14px; 
+     border-radius:5px;
+     color: white;
+     text-decoration: none;
+     float: right;
+     margin-bottom: 30px;
+}
+
+.back_btn:hover {
+    background-color: rgb(88,133,44);
+} 
+/*MALY NAVBAR*/
+
+.pz-link  {
+     padding:0;     
+}
+                                                                        /*NAVBAR IMG HOVER*/
+
+.btn2 {
+    padding:0;
+    padding-bottom: 10px;
+    cursor: pointer;
+    width:150px;
+    margin: auto;
+    background-color: transparent !important;
+    border-top:0;
+    border-bottom: 1px solid rgb(120,120,120) !important;    
+}
+
+.btn3 {
+    padding-top:13px;
+    cursor: pointer;    
+    margin: auto;
+    background-color: transparent !important;    
+}
+
+.btn33{
+    border-bottom: 0;
+    border-color: rgb(120,120,120);    
+}
+
+.btn2:hover {
+    filter: contrast(1.75);
+}
+
+.btn3:hover {
+    filter: contrast(1.75);
+}
+
+.fb-button-title{
+    width:150px;
+    text-align: center;
+}
+
+a.custom-link{
+    color: rgb(80,80,80);
+}
+
+a.custom-link:hover{
+   font-weight: bold;
+   text-decoration: none;
+}
+
+
+                                                                /*NICE HOVER BUTTONS*/
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+body {
+    --def: white; 	
+    --inv: rgb(102,153,51);
+/*    justify-content: center;*/
+/*    align-items: center;*/
+}
+
+html {	
+/*	font-family: 'Playfair Display', serif;*/
+}
+
+div {margin-bottom: 0rem;}
+div:last-child {margin-bottom: 0;}
+
+.btn, .btn4 {		
+	position: relative;	
+	padding: 0.4rem 0rem;	
+	font-size: 1rem;
+	color: rgb(80,80,80);
+/*	letter-spacing: 1.1rem;*/
+	text-transform: uppercase;
+	transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);	
+	cursor: pointer;
+	user-select: none;
+}
+
+.btn:before, .btn:after {
+	content: '';
+	position: absolute;	
+	transition: inherit;
+	z-index: -1;
+}
+
+.btn:hover {
+	color: white !important;   
+        transition-delay: .6s ;
+}
+
+.btn:hover:before {
+	transition-delay: 0s;
+}
+
+.btn:hover:after {
+	background: var(--inv);
+	transition-delay: .4s;
+        
+}
+/* From Left */
+
+.from-left:before, 
+.from-left:after {
+	top: 0;
+	width: 0;
+	height: 100%;
+         
+}
+
+.from-left:before {
+	right: 0;
+	border: 1px solid var(--inv);
+	border-left: 0;
+	border-right: 0;	
+}
+
+.from-left:after {
+	left: 0;
+}
+
+.from-left:hover:before,
+.from-left:hover:after {
+	width: 100%;
+       
+}
+
+
+  
+  body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: rgb(247,247,247);
+  
+}
+                                                                                /*UŻYWANE W WIELU MIEJSCACH*/
+                                                                                
+.pz-mt-5 {
+    margin-top:5%;
+}
+
+.pz-mt-10 {
+    margin-top:10%;
+}
+
+                                                                                /*SIDEBAR AND BODY*/
+            
+#pz-active {
+    color:white;
+    background-color: rgb(102,153,51);                                                                                    
+}                                                                                
+                                                                       
+#sidebar-wrapper {
+    height: 100vh;
+    width:20vw !important;
+    background-color:rgb(238,232,229);
+}            
+
+
+
+  .pz-navbar {
+      z-index: 0;
+    
+}
+
+
+.pz-sidenav {
+    
+    position: fixed;
+    background-color: rgb(238,232,229);
+    
+}
+
+
+
+
+
+.content {
+    
+  margin-left: 20vw;
+  padding: 0;
+  height: 1000px;
+}
+
+                                                                                /*NAVBAR UNDERLINE*/
+
+/*.link:after{
+  content: '';
+  position: absolute;
+  width: 0; height: 6px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #3d9c56; kolor znikajacego podkreslenia
+  transition: width .5s ease;
+  -webkit-transition: width .5s ease;
+}
+ 
+.link:hover:after{
+  width: 100%;
+  left: 0;
+  background: #3d9c56; kolor podkreslenia
+}*/
+
+
+
+                                                                                
+
+          
+
+
+    
+                                                                                /*HOME*/
+
+.home_bgrd {   
+    
+    width: 100%;
+    height: 100vh;
+}
+
+.pz-home-text {
+  text-align: justify;
+  color:white;
+  width:400px;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+
+/*.pz-home-text {
+  text-align: justify;
+  width:30%;
+  color:white;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transform: translate(-50%, -50%);
+}*/
+
+.twoColumns{
+    width: 60%;
+}
+
+.pz-container {
+/*    background-color: white;*/
+    margin:70px;
+}
+
+.pz-vid-container {
+    margin-bottom: 3%;
+}
+
+.pz-vid {
+    width: 100%;
+    height:100%;
+    border:0;
+    padding:0;
+    margin:0;
+}
+
+                                                                /*REHABILITACJA*/
+
+
+.zwiastun {
+    padding:2%;
+    margin:0% 4vw 0% 4vw;
+    border-width: 1px;
+    border-color: red;
+    border-radius:30px;
+    background-color:white;
+}
+
+
+
+
+
+.div-reh-4 {
+    
+    padding-top: 30px;
+    
+    text-align: justify;
+}
+                                                                    /*AKTUALNOŚCI*/
+
+.col-lg-4, .col-sm-6 {
+    padding:15px;
+}
+
+.akt_section {
+/*    border-color: black;
+    border-width: 1px;*/
+    border:1px solid darkgrey;
+    border-radius: 10px;
+}
+
+
+.akt_img {
+    border-radius:8px 8px 0px 0px;
+    width:100%;
+    height:20vw;
+}
+
+.akt_title {
+  text-align: center;
+  padding-top:8px;
+padding-left: 8px;
+padding-right: 8px;
+padding-bottom: 8px;
+}
+
+.akt_descr {
+    min-height:150px;
+}
+
+.akt_skrot {
+    text-align: center;
+    padding-left: 8px;
+    padding-right: 8px;
+}                                                      
+
+.akt_link {
+    color: rgb(30,30,30);
+}
+
+.akt_link:hover {
+    text-decoration: none;
+    color: rgb(30,30,30);
+}
+
+
+
+
+                                                                                /*GALERIA*/
+
+.container-fluid {
+    padding:0;
+    margin:0;
+}
+
+.pz-img {
+    padding: 1%;
+    width: 100%;
+    
+}
+
+.pz-img_m {
+    height:14vw;
+}
+
+
+
+.pz-niepelnosprawni {
+    position: absolute;
+    top:1vw;
+    left:21vw;
+    width:300px;
+    float:left;
+    
+}
+
+                                                                    
+
+                                                                        /*aaAAADRUKARKA*/
+
+.pz-breadcrumb {
+   background-color: rgb(247,247,247);
+}
+
+.pz-a {
+    padding: 0 5px 0 5px;
+     background-color: rgb(247,247,247) !important;
+}
+
+.pz-aa {
+    background-color: rgb(247,247,247) !important;
+}
+
+
+/*PAGINATION*/
+
+
+.pz-pagination a {
+  color: #354E1A;
+  float: left;
+  padding: 4px 11px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pz-pagination a.active {
+  background-color: rgb(102,153,51);
+  color: white;
+}
+
+.pz-pagination a:hover:not(.active) {background-color: #ddd;}
+
+
+
+
+
+#pz_prev_btn {
+  display: block;
+  position: fixed;
+  bottom: 50%;
+  left: 22%;
+  z-index: 99;
+  cursor: pointer;
+/*  albo zmień rozmiar ziomuś*/
+  width:30px;
+  transform: translate(-50%, -50%);  
+}
+
+#pz_next_btn {
+  display: block;
+  position: fixed;
+  bottom: 50%;
+  left:98%;
+  z-index: 99;
+  cursor: pointer;
+/*  albo zmień rozmiar ziomuś*/
+  width:30px;
+  transform: translate(-50%, -50%);
+  
+}
+
+
+
+
+
+/*                FUR STRONA GLOWNA*/
+
+                @media (max-width: 568px) {
+                  .pz-home-text {
+                      top:60%;
+                      width:95%;
+                  }
+                  h1 {
+                      font-size:23px;
+                  }
+
+                } 
+                
+                @media (max-width: 768px) {
+                  #page-content-wrapper {
+                    margin-top: 45px;
+                  }
+
+                  #sidebar-wrapper {
+                    display: none;
+                  }
+
+                  .content {    
+                  margin-left: 0px;
+                  }
+
+                  .pz-home-text {
+                      left:50%;
+                  }
+
+                  .pz-container {
+                    margin:10px;
+                  }
+                
+                  .pz-img_m {
+                height:33vw;            
+                }
+                
+                                
+                .akt_img {    
+                    height:auto;
+                  }
+                  
+                  .pz-breadcrumb {
+                      margin-top: 65px;
+                  }
+                  
+                  #pz_prev_btn {
+                    left: 2%;                   
+                    width:10px;    
+                  }
+                  
+                  #pz_next_btn {
+                      
+/*                    right: 0;*/
+                    width: 10px;  
+                  }
+                  
+                  .pz-art-img {
+                      width: 100%;
+                      margin:0;
+                      margin-bottom: 15px;
+                  }
+                  
+                  .pz-niepelnosprawni {
+                      left:1vw;
+                  }
+                }
+
+
+                @media (min-width: 768px) {
+                  #sidebar-wrapper {
+                    margin-left: 0;    
+                  }
+
+                  #page-content-wrapper {
+                    margin-left: 250px;
+                    min-width: 0;
+                    width: 100%;
+                  }
+                  
+                  #pz_prev_btn {
+                    width:20px;    
+                  }
+                  
+                  #pz_next_btn {
+                    width: 20px;  
+                  }
+                }
+
+                @media screen and (max-width: 1200px) {				
+                    	
+                }
+
+                @media (max-width:1000px){
+                    .btn2 {
+                        width:150px;
+                    }
+                }
+                
+                @media (min-width: 1200px) {
+                   
+                }
+
+.pz-art-img{
+	float:right; 
+	clear:left; 
+	border-radius:20px;
+        width:50%; 
+        clear:both; 
+        float:left; 
+        margin:15px;
+}

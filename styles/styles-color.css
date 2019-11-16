@@ -1,0 +1,113 @@
+#pz-active{
+background-color:yellow !important;	
+color: black !important;
+}	
+
+.modal-content {
+    background-color:black !important;
+}
+
+.btn-success,  .btn-sm{
+    background-color:rgb(30,30,30) !important;
+}
+
+
+.zwiastun, #sidebar-wrapper {
+    background-color: black;
+    color: yellow !important;
+}
+.pz-home-text{
+	background-color: black;
+padding:10px;
+}
+
+.content {
+	background-color: black;
+	height:100%;
+}
+
+* {
+	color: yellow !important;
+}
+
+.pz-title {
+    color: yellow;
+    font-weight: bold;
+}
+
+.pz-nav {
+    background-color: black !important;
+   
+}
+
+.pz-toggler, .breadcrumb, .pz-a, .pz-aa {
+    background-color: yellow !important;
+} 
+
+.pz-link  {
+     color: yellow !important;
+}
+
+.bip-img {
+    background-color: yellow !important;
+    border-radius: 5px;
+    
+}
+
+.btn2 {
+    border-bottom: none !important;
+}
+
+.bip-img:hover {
+    background-color: #cccc00 !important;
+}
+
+.zwiastun {
+    border: 2px solid yellow;
+}
+
+.akt_section {
+    
+    border: solid 2px yellow;
+    
+   
+}
+
+.akt_skrot, .akt_descr  {
+    background-color: transparent !important;
+}
+
+
+.back_btn {   
+     background-color: yellow;     
+     color: black !important;     
+     font-weight: bold;
+}
+
+.back_btn:hover {
+    background-color: #cccc00;
+} 
+
+a:hover {
+    color:yellow;
+}
+
+.btn:hover {
+    color: black !important;
+    transition-delay: 0s ;
+    background-color: yellow;
+}
+
+
+.pz-pagination a {
+  color: yellow;
+}
+.pz-pagination a.active {
+  background-color: yellow;
+  color: black;
+}
+.pz-pagination a:hover:not(.active) {background-color: rgb(50,50,50);}
+
+#pz_prev_btn, #pz_next_btn {
+    background-color: yellow;
+}
